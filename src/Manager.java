@@ -1,7 +1,9 @@
+import net.jini.core.entry.Entry;
+
 /**
  * Created by joseLucas on 16/07/17.
  */
-public class Manager implements Entry {
+public class Manager implements Entry{
 
     public String code = "manager";
 

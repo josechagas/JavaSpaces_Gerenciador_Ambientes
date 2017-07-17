@@ -1,7 +1,9 @@
+import net.jini.core.entry.Entry;
+
 /**
  * Created by joseLucas on 16/07/17.
  */
-public class Ambiente {
+public class Ambiente implements Entry {
 
     public String name;
     public Integer numbOfDisps;
