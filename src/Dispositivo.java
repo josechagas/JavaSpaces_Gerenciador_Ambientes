@@ -17,4 +17,6 @@ public class Dispositivo implements Entry {
         this.ambiente = ambiente;
     }
 
+
+
 }
