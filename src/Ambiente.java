@@ -5,18 +5,25 @@ import net.jini.core.entry.Entry;
  */
 public class Ambiente implements Entry {
 
-    public String name;
+    public String type;
+    public Integer id;
     public Integer numbOfDisps;
     public Integer nextDispID;
 
-    Ambiente(){
-
+    public Ambiente(){
+        type = "amb";
     }
 
-    Ambiente(String name,Integer numbOfDisps,Integer nextDispID){
-        this.name = name;
+    public Ambiente(Integer id,Integer numbOfDisps,Integer nextDispID){
+        type = "amb";
+        this.id = id;
         this.numbOfDisps = numbOfDisps;
         this.nextDispID = nextDispID;
     }
 
+
+
+    public String getName(){
+        return type+id;
+    }
 }

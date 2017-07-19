@@ -5,18 +5,21 @@ import net.jini.core.entry.Entry;
  */
 public class Manager implements Entry{
 
-    public String code = "manager";
-
+    public String type;
     public Integer numbOfAmbientes;
     public Integer nextAmbID;
 
-    Manager(){
-
+    public Manager(){
+        type = "manager";
     }
 
-    Manager(Integer numbOfAmbientes, Integer nextAmbID){
+    public Manager(Integer numbOfAmbientes, Integer nextAmbID){
         this.numbOfAmbientes = numbOfAmbientes;
         this.nextAmbID = nextAmbID;
+        type = "manager";
     }
 
+    public Manager(String type){
+        this.type = type;
+    }
 }

@@ -23,7 +23,7 @@ public class DispositivoVC {
 
     DispositivoVC(Dispositivo disp){
         dispositivo =disp;
-        titleLabel.setText(disp.name);
+        titleLabel.setText(disp.getName());
         setUpMoveButton();
 
         setUpRemoveButton();
@@ -31,7 +31,7 @@ public class DispositivoVC {
 
     public DispositivoVC update(Dispositivo disp){
         dispositivo = disp;
-        titleLabel.setText(disp.name);
+        titleLabel.setText(disp.getName());
         setUpMoveButton();
 
         setUpRemoveButton();

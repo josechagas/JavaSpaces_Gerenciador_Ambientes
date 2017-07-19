@@ -5,18 +5,23 @@ import net.jini.core.entry.Entry;
  */
 public class Dispositivo implements Entry {
 
-    public String name;
-    public String ambiente;
+    public String type;
+    public Integer id;
+    public Integer ambienteID;
 
-    Dispositivo(){
-
+    public Dispositivo(){
+        type = "disp";
     }
 
-    Dispositivo(String name, String ambiente){
-        this.name = name;
-        this.ambiente = ambiente;
+    public Dispositivo(Integer id, Integer ambienteID){
+        type = "disp";
+        this.id = id;
+        this.ambienteID = ambienteID;
     }
 
 
+    public String getName(){
+        return type+id+"."+ambienteID;//+".a"+ambienteID;
+    }
 
 }
